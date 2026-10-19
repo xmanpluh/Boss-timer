@@ -29,4 +29,4 @@ async def boss_timer_loop():
             await channel.send("⚔️ **Boss Spawn :** Nivis and The Masked Warrior has spawned.")
 
 # 2. ÄNDRA TILL DIN HEMLIGA TOKEN HÄR (behåll fnuttarna kvar runt texten)
-bot.run(os.environ.get("DISCORD_TOKEN")
+bot.run(os.environ.get("DISCORD_TOKEN"))
