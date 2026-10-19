@@ -18,15 +18,15 @@ async def on_ready():
 async def boss_timer_loop():
     now = datetime.datetime.now()
 
-    if now.minute == 20:
+    if now.minute == 15:
         channel = bot.get_channel(int(CHANNEL_ID))
         if not channel:
             return
 
         if now.hour % 2 == 0:
-            await channel.send("⚔️ **Boss Spawn :** Junichiro and The Parasite has spawned.")
+            await channel.send("⚔️ **Boss Spawn :** Junichiro and The Parasite spawns in 5 minutes.")
         else:
-            await channel.send("⚔️ **Boss Spawn :** Nivis and The Masked Warrior has spawned.")
+            await channel.send("⚔️ **Boss Spawn :** Nivis and The Masked Warrior spawns in 5 minutes.")
 
 # 2. ÄNDRA TILL DIN HEMLIGA TOKEN HÄR (behåll fnuttarna kvar runt texten)
 @bot.command()
