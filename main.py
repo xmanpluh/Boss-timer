@@ -1,3 +1,4 @@
+import os
 import discord
 from discord.ext import commands, tasks
 import datetime
@@ -28,4 +29,4 @@ async def boss_timer_loop():
             await channel.send("⚔️ **Boss Spawn :** Nivis and The Masked Warrior has spawned.")
 
 # 2. ÄNDRA TILL DIN HEMLIGA TOKEN HÄR (behåll fnuttarna kvar runt texten)
-bot.run('MTU2MTY2NjY3MjE0MDQ4ODcyNQ.GwoN4T.Huw6WOoUbbHXSmNZSbsc06lByHHEeOFfUR2Lo0')
+bot.run(os.environ.get("DISCORD_TOKEN")
